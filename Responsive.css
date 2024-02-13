@@ -1,0 +1,24 @@
+@media (max-width: 767px) {
+    header ul {display: none;}
+    span.humburger {display: block;width: 30px;height: 24px;position: relative;z-index: 0;}
+    span.humburger span {background: #fff;width: 100%;height: 2px;transition: all 0.3s ease-in-out; position: absolute;}
+    
+    span.humburger span:nth-child(1) {transform: translateY(0px);}
+    span.humburger span:nth-child(2) {transform: translateY(10px);}
+    span.humburger span:nth-child(3) {transform: translateY(20px);}
+    nav.active span.humburger span:nth-child(2) {display: none;}
+    nav.active span.humburger span:nth-child(1) { transform: rotate(45deg) translate(7px, 7px); }
+    nav.active span.humburger span:nth-child(3) {transform: rotate(-45deg) translate(-7px, 7px);}
+    
+    nav.active ul {display: block;position: absolute;top: 100%;left: 0;right: 0;z-index: 1;background-color: var(--color4);}
+    nav.active ul li {width: 100%;}
+
+
+
+    .sliderWidthCSS .slider .slide .caption { bottom: 20px; right: 20px; left: 20px; padding: 20px; }
+	.sliderWidthCSS .slider .slide .caption h2 { margin: 0 0 10px; font-size: 30px; } 
+    .sliderWidthCSS .slider .slide .caption p { font-size: 16px; }
+}
+
+
+
