@@ -178,7 +178,7 @@ $('.parent-menu').click(function (e) {
 // Simple tabs
 $('.tabs-nav a').on('click', function (event) {
     event.preventDefault();
-    
+
     $('.tab-active').removeClass('tab-active');
     $(this).parent().addClass('tab-active');
     $('.tabs-stage div').hide();
@@ -186,3 +186,24 @@ $('.tabs-nav a').on('click', function (event) {
 });
 
 $('.tabs-nav a:first').trigger('click'); // Default
+
+
+// On Hover Background Change
+$('.bxHoverBgChange ul li').hover(
+    function () {
+        var tr = jQuery(this).attr('class');
+        $(".bg-body").addClass(tr);
+    },
+
+    function () {
+        var trr = jQuery(this).attr('class');
+        $(".bg-body").removeClass(trr);
+    }
+);
+
+// Login Box
+function opentab(obj) {
+    $(".tab__container, .tab").removeClass("active");
+      $($(obj).attr("href")).addClass("active");
+      $(obj).addClass('active');
+   }

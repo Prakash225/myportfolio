@@ -12,13 +12,4 @@
     
     nav.active ul {display: block;position: absolute;top: 100%;left: 0;right: 0;z-index: 1;background-color: var(--color4);}
     nav.active ul li {width: 100%;}
-
-
-
-    .sliderWidthCSS .slider .slide .caption { bottom: 20px; right: 20px; left: 20px; padding: 20px; }
-	.sliderWidthCSS .slider .slide .caption h2 { margin: 0 0 10px; font-size: 30px; } 
-    .sliderWidthCSS .slider .slide .caption p { font-size: 16px; }
 }
-
-
-

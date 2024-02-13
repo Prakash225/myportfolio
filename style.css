@@ -112,6 +112,8 @@ a, button { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; -
 .btn_all a:hover { background-color: var(--color5);border-color: var(--color5);color: var(--color1);}
 /* ~~~~~ / Main CSS ~~~~~ */
 .scroll-line {height:5px;margin-bottom:-5px;background:#f00;width:0%;position: absolute;left: 0;bottom: 0;}
+.bgFix {background-attachment: fixed;}
+.bgImg {background-repeat: no-repeat;background-size: cover;background-position: center center;}
 
 /* ~~~~~ header CSS ~~~~~ */
 header {padding: 30px 0;background-color: var(--cyan-bluish-gray);width: 100%;display: block;position: relative;z-index: 9999;}
@@ -279,6 +281,41 @@ header li a:hover,header li a:focus {color: #b8e621;}
 .simpleTabs .tabs-stage div:nth-child(even) {background-color: var(--purple);}
 .simpleTabs .tabs-stage p { margin: 0; padding: 20px; color: var(--white); }
 
+/* ~~~~~ Login Box CSS ~~~~~ */
+.loginBx {width: 100%;display: block;padding: 50px 0;background-color: var(--light-green-cyan);position: relative;z-index: 0;background: 	#008B8B; background-repeat: no-repeat; background-position: center; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;}
+.loginBx .login_box {  /*position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);*/margin: 0 auto; width: 100%;max-width: 900px; padding: 2em 2em 3em; -webkit-box-shadow: -2px 7px 37px 8px rgba(0, 0, 0, 0.52); -moz-box-shadow: -2px 7px 37px 8px rgba(0, 0, 0, 0.52); box-shadow: -2px 7px 37px 8px rgba(0, 0, 0, 0.52); background: rgba(255, 251, 251, 0.16); border-radius: 5px; }
+.loginBx .login_box input { width: 100%; color: #000000; outline: none; font-size: 14px; padding: 0.8em 0.7em; margin: 0px 0px 23px; border: none; border-radius: 4px; display: inline-block; background: #fff; transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; box-sizing: border-box; }
+.loginBx .check { width: 24px; height: 24px;}
+.loginBx .btnn { text-align: left; }
+.loginBx button[type="submit"]:hover { background: #000000; }
+.loginBx button[type="submit"] { width: 35%; background: #f47721; outline: none; color: #fff; font-size: 13px; border: none; border-radius: 4px; padding: 14px 6px; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: 0.5s all; -webkit-transition: 0.5s all; -o-transition: 0.5s all; -moz-transition: 0.5s all; -ms-transition: 0.5s all; }
+.loginBx .for { font-size: 13px; padding: 2.2em 0em 1em; color: #fff; text-align: center; display: block; letter-spacing: 1px; text-transform: uppercase; }
+.loginBx .login_box .tab.active, 
+.loginBx .login_box .tab:hover { border-bottom: 2px solid #fff; }
+.loginBx .login_box .tab { color: #fff; width: 50%; text-align: center; text-transform: capitalize; font-size: 1.3em; cursor: pointer; display: inline-block; margin: 0; outline: none; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; width: 50%; background: rgba(245, 245, 245, 0); padding: 8px 0; border-bottom: 2px solid #000; }
+.loginBx ul {margin: 0 0 40px;padding: 0;display: flex;flex-wrap: wrap;justify-content: center;width: 100%;}
+.loginBx ul li { list-style: none; display: inline-block; }
+.loginBx ul li a { text-decoration: none; color: #fff; }
+.loginBx .icon_head h2 {font-size: 30px;color: #fff;font-weight: bold;text-align: center;margin: 0 0 30px;}
+.loginBx .tab__container { width: 100%; display: none; }
+.loginBx .tab__container div {display: block;}
+.loginBx .tab__container.active { display: block; }
+
+
+
+/* ~~~~~ bxHoverBgChange CSS ~~~~~ */
+.bg-body { background-color: #000; color: #ffffff; transition: all ease-in-out 0.2s;width: 100%;display: block;padding: 100px 0;background-color: var(--white);position: relative;z-index: 0; }
+.bg-body ul { list-style: none;gap: 50px; display: flex; flex-wrap: wrap; justify-content: space-between; text-align: center;  align-items: center; }
+.bg-body ul li { cursor: pointer;padding: 2.5rem; width: 30%; border: 1px solid var(--black);color: var(--black);}
+.bg-body ul li .fa { font-size: 40px; margin: 20px auto; }
+.bg-body.red { background: red; }
+.bg-body.green { background: green; }
+.bg-body.yellow { background: yellow; }
+.bg-body.blue { background: blue; }
+.bg-body.cyan { background: cyan; }
+.bg-body.orange { background: orange; }
+
+
 
 /* ~~~~~ imageHoverBx CSS ~~~~~ */
 .imageHoverBx {width: 100%;display: block;padding: 50px 0;background-color: var(--purple);position: relative;z-index: 0;}
@@ -301,8 +338,10 @@ header li a:hover,header li a:focus {color: #b8e621;}
 .footer {width: 100%;display: block;padding: 50px 0;background-color: var(--black);position: relative;z-index: 0;}
 .footer .footer-links, .footer .footer-icons { display: flex; justify-content: center; margin-bottom: 1.5rem; flex-wrap: wrap; }
 .footer .footer-link { color: var(--white); text-transform: capitalize; font-size: 1rem; margin-right: 1rem; letter-spacing: var(--spacing); transition: var(--transition); }
-.footer .footer-link:hover { color: var(--clr-primary-5); }
+.footer .footer-link:hover { color: var(--amber); }
 .footer .footer-icon { font-size: 2rem; margin-right: 1rem; color: var(--white); transition: var(--transition); }
-.footer .footer-icon:hover { color: var(--clr-primary-5); }
+.footer .footer-icon:hover { color: var(--amber); }
 .footer .copyright { text-transform: capitalize; letter-spacing: var(--spacing); color: var(--white);text-align: center; }
+.footer .copyright a {color: var(--white);}
+.footer .copyright a:focus,.footer .copyright a:hover { color: var(--amber); }
 .footer .copyright span { margin-left: 0.5rem; }
