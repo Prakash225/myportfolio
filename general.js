@@ -1,16 +1,15 @@
 //   On scroll header fixed
 var nav = document.getElementById('custheader');
 
-window.onscroll = function () {
-
-    if (window.pageYOffset > 57) {
-        nav.style.position = "fixed";
-        nav.style.top = "0px";
-    } else {
-        nav.style.position = "";
-        nav.style.top = "";
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 50) {
+        $(nav).addClass('fixed-header');
     }
-}
+    else {
+        $(nav).removeClass('fixed-header');
+    }
+});
+
 
 
 // Top Navigation Code
@@ -204,6 +203,38 @@ $('.bxHoverBgChange ul li').hover(
 // Login Box
 function opentab(obj) {
     $(".tab__container, .tab").removeClass("active");
-      $($(obj).attr("href")).addClass("active");
-      $(obj).addClass('active');
-   }
+    $($(obj).attr("href")).addClass("active");
+    $(obj).addClass('active');
+}
+
+
+// Image Slider
+$('#imgsliderbx').slick({
+    centerMode: true,
+    centerPadding: '15px',
+    dots: true,
+    infinite: true,
+    speed: 300,
+    adaptiveHeight: true,
+    slidesToShow: 3,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ]
+});
