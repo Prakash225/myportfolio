@@ -1,6 +1,6 @@
 /* ~~~~~ multiLayer CSS ~~~~~ */
 .multiLayer {width: 100%;display: block;padding: 100px 0;background-color: var(--orange);}
-.multiLayer .multiLayerMain {display: flex;justify-content: space-between;gap: 20px;}
+.multiLayer .multiLayerMain {display: flex;justify-content: center;gap: 50px;}
 .multiLayer .box { /* position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); */ position:relative;width:300px; height:300px; }
 .multiLayer .box .layer1 { position:absolute; top:0; left:0; width:100%; height:100%; border:1px solid #fff; padding:20px; box-sizing:border-box; transition:0.5s; background:#949438; overflow:hidden; z-index:3; }
 .multiLayer .box .layer1:before { content:''; position:absolute; top:0; left:-110%; width:100%; height:100%; background:rgba(255,255,255,.1); pointer-events:none; transition:0.5s; transform:skewX(-5deg); }
@@ -10,3 +10,13 @@
 .multiLayer .box:hover .layer2 { top:0px; left:0px; box-shadow:0 5px 20px rgba(0,0,0,1); }
 .multiLayer .box .layer3 { position:absolute; top:0; left:0; width:100%; height:100%; border:1px solid #fff; box-sizing:border-box; transition:0.5s; background:#03a9f4; z-index:1; }
 .multiLayer .box:hover .layer3 { top:10px; left:-10px; box-shadow:0 20px 50px rgba(0,0,0,1); }
+
+@media (max-width: 1199px) {
+    .multiLayer{padding: 70px 0;}
+    .multiLayer .multiLayerMain {flex-wrap: wrap;}
+}
+
+@media (max-width: 991px) {
+    .multiLayer{padding: 50px 0;}
+    .multiLayer .box { width: 240px; height: 400px; }
+}

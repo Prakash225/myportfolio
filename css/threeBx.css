@@ -4,7 +4,18 @@
 .threeBx .container .visual { height: 100px; width: 100%; }
 .threeBx .container .card { display: flex; flex-direction: column; padding: 1rem; justify-content: space-between; }
 .threeBx .container h3 { margin: 0; }
+.threeBx .container .visual {margin-top: 15px;}
 .threeBx .yellow { background-color: #fee8b4; border: 1px solid #ffd675; }
 .threeBx .pink { background-color: #f5e0e9; border: 1px solid #f9bed6; }
 .threeBx .blue { background-color: #a9e2ea; border: 1px solid #81cfd9; }
 .threeBx .green { background-color: #d4f2c4; border: 1px solid #b9dba9; }
+
+@media (max-width: 767px) {
+    .threeBx {padding: 30px 0;}
+    .threeBx .container .parent {grid-template-columns: repeat(2, 1fr);}
+    .threeBx  .parent .card:last-child {grid-column: -1/1;}
+}
+@media (max-width: 575px) {
+    .threeBx .container .parent {grid-template-columns: repeat(1, 1fr);}
+    .threeBx  .parent .card {grid-column: -1/1;}
+}

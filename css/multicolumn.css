@@ -5,3 +5,15 @@
 .multi_column div { margin-bottom: 10px; padding: 16px; border: 1px solid #000; }
 .multi_column div:nth-child(2n + 0) { background: #cae4ff; }
 .multi_column div:nth-child(2n + 1) { background: #a4d1ff; }
+
+
+@media (max-width: 991px) {
+    .multicolumn {padding: 30px 0;}
+    .multi_column {width: 100%; column-count: 3;}
+}
+@media (max-width: 767px) {
+    .multi_column {column-count: 2;}
+}
+@media (max-width: 575px) {
+    .multi_column {column-count: 1;}
+}

@@ -1,26 +1,9 @@
 /* ~~~~~ Hero CSS ~~~~~ */
-.hero {
-    height: calc(100vh - 73px - 250px);
-    /* background-image: url('https://fastly.picsum.photos/id/122/1920/1080.jpg?hmac=ldynX93rVeTWk1ck63KkZynJuRiuOeRpXULW0Sf5SNs'); */
-    /* background-size: cover; */
-    /* background-position: center; */
-}
+.hero { height: calc(100vh - 73px - 250px); /* background-image: url('https://fastly.picsum.photos/id/122/1920/1080.jpg?hmac=ldynX93rVeTWk1ck63KkZynJuRiuOeRpXULW0Sf5SNs'); */ /* background-size: cover; */ /* background-position: center; */ }
+.hero .hsItem { position: relative; z-index: 0; overflow: hidden; height: calc(100vh - 73px - 250px); }
+.hero .hsItem img { height: 100%; width: 100%; top: 0; bottom: 0; right: 0; left: 0; object-fit: cover; }
 
-.hero .hsItem {
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
-    height: calc(100vh - 73px - 250px);
+@media (max-width: 991px) {
+    .hero,.hero .hsItem {height: 350px;}
 }
-
-.hero .hsItem img {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    object-fit: cover;
-}
-
 /* ~~~~~ Hero CSS ~~~~~ */

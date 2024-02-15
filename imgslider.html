@@ -141,7 +141,39 @@
     <!-- [S] Script -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/general.js"></script>
-    <script src="js/script.js"></script>
+    <script>
+
+        // Image Slider
+        $('#imgsliderbx').slick({
+            centerMode: true,
+            centerPadding: '15px',
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true,
+            infinite: true,
+            speed: 300,
+            adaptiveHeight: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        dots: false,
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        dots: false,
+                        centerPadding: '0px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
     <!-- [E] script  -->
 </body>
 

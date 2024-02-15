@@ -12,3 +12,24 @@
 .quoteSec .fa { width: 80px; height: 80px; background: #fff; color: #262626; text-align: center; line-height: 80px !important; font-size: 40px !important; }
 .quoteSec .fa.fa1 { position: absolute; top: 0; left: 0; }
 .quoteSec .fa.fa2 { position: absolute; bottom: 0; right: 0; z-index: 1; }
+
+@media (max-width: 991px) {
+    .quoteSec {padding: 70px 0;}
+    .quoteSec .fa { width: 70px; height: 70px; line-height: 70px !important; font-size: 35px !important; }
+    .quoteSec .box:before { border-top: 15px solid #fff; border-left: 15px solid #fff; }
+    .quoteSec .box:after { border-bottom: 15px solid #fff; border-right: 15px solid #fff; }
+}
+@media (max-width: 767px) {
+    .quoteSec {padding: 50px 0;}
+    .quoteSec .box { width: 400px; height: 360px; }
+    .quoteSec .fa { width: 50px; height: 50px; line-height: 50px !important; font-size: 30px !important; }
+    .quoteSec .box:before { border-top: 10px solid #fff; border-left: 10px solid #fff; }
+    .quoteSec .box:after { border-bottom: 10px solid #fff; border-right: 10px solid #fff; }
+}
+@media (max-width: 575px) {
+    .quoteSec .box { width: 220px; height: 280px; }
+    .quoteSec .text div h1 {margin-bottom: 10px;font-size: 22px;}
+    .quoteSec .text div p {font-size: 12px;}
+    .quoteSec .fa { width: 40px; height: 40px; line-height: 40px !important; font-size: 22px !important; }
+    .quoteSec .text div { padding: 40px 50px; }
+}

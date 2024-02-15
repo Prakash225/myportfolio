@@ -25,3 +25,17 @@
 .posterSec .star ul { margin:10px 0 0; padding:0; display:flex; }
 .posterSec .star ul li { list-style:none; width:35px; height:35px; background:#fff; border-radius:50%; overflow:hidden; margin-right:6px; border:2px solid #fff; }
 .posterSec .star ul li img { width:100%; }
+
+@media (max-width: 1199px) {
+    .posterSec .posterMain {flex-wrap: wrap;justify-content: center;}
+    .posterSec .card {width: 48%;}
+    .posterSec .details {bottom: -240px;}
+}
+@media (max-width: 767px) {
+    .posterSec {padding: 30px 0;}
+    .posterSec .details {bottom: -215px;}
+}
+@media (max-width: 575px) {
+    .posterSec .card {width: 100%;}
+    .posterSec .details {bottom: -240px;}
+}
