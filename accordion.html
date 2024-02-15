@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <!-- [S] JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <!-- [E] JS -->
+</head>
+
+<body>
+    <!-- [S] Navigation -->
+    <div id="header"></div>
+    <!-- [E] Navigation -->
+    <!-- [S] Accordion -->
+    <section class="accordionSec bgImg bgFix"
+        style="background-image: url('https://i.pinimg.com/originals/18/14/9a/18149afc5f3901fc22be42aef0d1463c.jpg');">
+        <div class="container">
+            <div class="accordionMain">
+                <ul class="accordion">
+                    <li>
+                        <a class="parent-menu" href="javascript:void(0);">Item 1</a>
+                        <ul class="sub-menu">
+                            <li>Option 1</li>
+                            <li>Option 2</li>
+                            <li>Option 3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="parent-menu" href="javascript:void(0);">Item 2</a>
+                        <ul class="sub-menu">
+                            <li>Option 1</li>
+                            <li>Option 2</li>
+                            <li>Option 3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="parent-menu" href="javascript:void(0);">Item 3</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#" class="parent-menu">Open Inner</a>
+                                <div class="sub-menu">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus
+                                        placerat fringilla. Duis a elit et dolor laoreet volutpat. Aliquam ultrices
+                                        mauris id mattis imperdiet. Aenean cursus ultrices justo et varius. Suspendisse
+                                        aliquam orci id dui dapibus
+                                        blandit. In hac habitasse platea dictumst. Sed risus velit, pellentesque eu enim
+                                        ac, ultricies pretium felis.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#" class="parent-menu">Open Inner #2</a>
+                                <div class="sub-menu">
+                                    <p>
+                                        Children will automatically close upon closing its parent.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>Option 3</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="parent-menu" href="javascript:void(0);">Item 4</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#" class="parent-menu">Technically any number of nested elements</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#" class="parent-menu">Another nested element</a>
+                                        <div class="sub-menu">
+                                            <p>
+                                                As long as the inner element has inner as one of its classes then it
+                                                will be toggled.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus
+                                                placerat fringilla. Duis a elit et dolor laoreet volutpat. Aliquam
+                                                ultrices mauris id mattis imperdiet. Aenean cursus ultrices justo et
+                                                varius. Suspendisse aliquam orci id dui dapibus
+                                                blandit. In hac habitasse platea dictumst. Sed risus velit, pellentesque
+                                                eu enim ac, ultricies pretium felis.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>Option 2</li>
+
+                            <li>Option 3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- [E] Accordion -->
+    <!-- [S] Navigation -->
+    <div id="footer"></div>
+    <!-- [E] Navigation -->
+    <!-- [E] script  -->
+    <script src="js/general.js"></script>
+    <!-- [E] script  -->
+</body>
+
+</html>

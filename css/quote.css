@@ -1,0 +1,14 @@
+/* ~~~~~ threeBx CSS ~~~~~ */
+.quoteSec {width: 100%;display: block;padding: 100px 0;background-color: var(--light-green-cyan);overflow-x: hidden;}
+.quoteSec .box { /*position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);*/margin:0 auto; width: 500px; height: 400px; cursor: pointer; transform-style: preserve-3d; perspective: 2000px; transition: 0.5s; }
+.quoteSec .box:hover { transform:  rotateY(-30deg) skewY(5deg); }
+.quoteSec .box:before { content:''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: transparent; border-top: 20px solid #fff; border-left: 20px solid #fff; box-sizing: border-box; }
+.quoteSec .box:after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: transparent; border-bottom: 20px solid #fff; border-right: 20px solid #fff; box-sizing: border-box; }
+.quoteSec .box .text { position: absolute; top: 30px; left: -30px; background: #262626; width: calc(100% + 60px); height: calc(100% - 60px); transition: 0.5s; }
+.quoteSec .box:hover .text { transform:rotateY(30deg) skewY(-5deg); }
+.quoteSec .text div { position: absolute; top: 50%; left: 0; width: 100%; transform:translateY(-50%); padding: 40px 80px; box-sizing: border-box; text-align: center; }
+.quoteSec .text div h1 { margin: 0 0 20px; padding: 0; color: #fff; }
+.quoteSec .text div p { margin: 0 0 20px; padding: 0; color: #fff; font-size: 18px; }
+.quoteSec .fa { width: 80px; height: 80px; background: #fff; color: #262626; text-align: center; line-height: 80px !important; font-size: 40px !important; }
+.quoteSec .fa.fa1 { position: absolute; top: 0; left: 0; }
+.quoteSec .fa.fa2 { position: absolute; bottom: 0; right: 0; z-index: 1; }

@@ -1,0 +1,14 @@
+/* ~~~~~ FormAnimated CSS ~~~~~ */
+.FormAnimated {width: 100%;display: block;padding: 100px 0;background-color: var(--cyan-bluish-gray);position: relative;z-index: 0;}
+.FormAnimated form {margin: 0 auto; display: flex;flex-wrap: wrap; max-width: 768px; width: 100%; background: rgba(255, 235, 0, 0.5); padding: 50px 50px 15px 50px; border-style: solid; border-color: #a55eea; border-width: 0 4px; transition: 0.5s; } 
+.FormAnimated form:hover { background: #ffeb00; }
+.FormAnimated form h1 { color: #000; text-align: center; margin-bottom: 40px; text-transform: uppercase; }
+.FormAnimated form .col { padding: 0 10px; box-sizing: border-box; }
+.FormAnimated form .col-6 { width: 50%; }
+.FormAnimated form .col-12 { width: 100%; }
+.FormAnimated form input, .FormAnimated form textarea { position: relative; width: 100%; height: 35px; color: #000; background: transparent; padding: 8px 10px; border-radius: 5px; box-sizing: border-box; border: 1px solid rgba(0, 0, 0, 0.3); z-index: 1; }
+.FormAnimated form textarea { height: 100px; }
+.FormAnimated form .inputbox { position: relative; margin-bottom: 35px; }
+.FormAnimated form .inputbox .inputtext { position: absolute; top: 10px; left: 20px; color: #000; opacity: 0.5; font-size: 12px; transition: 0.5s; }
+.FormAnimated form .focus .inputtext { font-size: 18px; left: 10px; transform: translateY(-35px); opacity: 1; }
+

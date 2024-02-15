@@ -1,0 +1,14 @@
+/* ~~~~~ Slider with CSS ~~~~~ */
+.sliderWidthCSS {width: 100%;display: block;padding: 100px 0;background-color: var(--cyan-blue);position: relative;z-index: 0;overflow-x: hidden;}
+.sliderWidthCSS .slider {position: relative;top: 0;left: 0;width: 500%;animation: animate 10s linear infinite;display: flex;align-items: center;}
+.sliderWidthCSS .slider .slide {position: relative;width: 20%;min-height: 220px;}
+.sliderWidthCSS .slider .slide .caption {position: absolute;bottom: 0;right: 60px;left: 60px;padding: 30px;background-color: rgba(0,0,0,.5);box-sizing:border-box;transition: 0.5s;}
+.sliderWidthCSS .slider .slide .caption h2 { margin: 0; padding: 0; color: #fff; font-size: 48px; transition: 0.5s; }
+.sliderWidthCSS .slider .slide .caption p { margin: 0; padding: 0; color: #fff; font-size: 18px; transition: 0.5s; }
+.sliderWidthCSS .slider .slide.slide1 { background: url(https://www.planwallpaper.com/static/images/47141475-hd-wallpapers.jpg); background-size: cover; background-position: center; }
+.sliderWidthCSS .slider .slide.slide2 { background: url(https://www.planwallpaper.com/static/images/963840d34c51efe6fbe57749fb434646.jpg); background-size: cover; background-position: center; }
+.sliderWidthCSS .slider .slide.slide3 { background: url(https://www.planwallpaper.com/static/images/HD-Wallpapers-B1.jpg); background-size: cover; background-position: center; }
+.sliderWidthCSS .slider .slide.slide4 { background: url(https://www.planwallpaper.com/static/images/beach-cool-wallpaper-hd_1_tKvqLtf.jpg); background-size: cover; background-position: center; }
+
+@keyframes animate { 0% { left: 0; } 20% { left: 0; } 25% { left: -100%; } 45% { left: -100%; } 50% { left: -200%; } 70% { left: -200%; } 75% { left: -300%; } 95% { left: -300%; } 100% { left: -400%; } }
+

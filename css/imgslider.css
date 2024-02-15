@@ -1,0 +1,30 @@
+/* ~~~~~ Image Slider CSS ~~~~~ */
+.Imgslider {width: 100%;display: block;padding: 100px 0;background-color: var(--purple);overflow-x: hidden;}
+.Imgslider .slick-list {margin-left: -32px;margin-right: -32px;}
+.Imgslider .sliderItem {position: relative;z-index: 0; margin: 10px; -moz-transform: scale(0.95); -ms-transform: scale(0.95); -o-transform: scale(0.95); -webkit-transform: scale(0.95); opacity: 0.5; transform: scale(0.95);}
+.Imgslider .sliderItem.slick-center { -moz-transform: scale(1.08); -ms-transform: scale(1.08); -o-transform: scale(1.08); -webkit-transform: scale(1.08); opacity: 1; transform: scale(1.08); }
+.Imgslider .slick-arrow { font-size: 0px !important; color: transparent; }
+.Imgslider .slider .slick-arrow { position: absolute; background: #3c3b6e; opacity: 0.7; bottom: -40px; z-index: 1; width: 3rem; height: 3rem; transform: translateY(-50%); padding: 0; overflow: hidden; font-size: 20px; background-repeat: no-repeat; background-position: center; background-size: cover; border: 1px solid #fff; border-radius: 0%; cursor: pointer; outline: none; transition: 0.25s; }
+.Imgslider .slider .slick-arrow:hover, .slider .slick-arrow:focus { border-color: white; color: #b22234; background: #b22234; opacity: 0.95; }
+.Imgslider .slider .slick-arrow:active { transform: translateY(-50%) scale(0.9); }
+.Imgslider .slider .slick-prev { right: 180px; }
+.Imgslider .slider .slick-next { right: 100px; }
+.Imgslider .slick-prev:before {content: "←";color: #b22234;font-size: 30px;cursor: pointer;padding: 0 10px;}  
+.Imgslider .slick-next:before {content: "→";color: #b22234;font-size: 30px;cursor: pointer;padding: 0 10px;}
+.Imgslider .slick-slide img { width: 100%; height: 100%; max-width: 100%; -o-object-fit: cover; object-fit: cover; }
+/* Position Slick dots container down some */
+.Imgslider .slick-dots > .slick-active { color: #b22234; font-weight: bold; }
+.Imgslider .slick-dots button { background: transparent; color: white; border: 1px solid white; padding-top: 5px; padding-bottom: 5px; padding-right: 10px; padding-left: 10px; cursor: pointer; opacity: 0.8; }
+.Imgslider .slick-dots {list-style: none;border-radius: 50%;transition: 0.2s;padding: 0;position: relative;width: 100%;margin: 30px auto 0;text-align: center;}
+.Imgslider .slick-dots li { display: inline-block; vertical-align: top; margin: 0 8px; }
+.Imgslider .slick-dots li:last-child {margin-right: 0;}
+.Imgslider .slick-dots li button { border: none; cursor: pointer; font-size: 13px; border: 1px solid #fff; box-shadow: 0 0 0 0 transparent; color: #fff; background-color: transparent; transition: all 0.3s ease; opacity: 0.4; }
+.Imgslider .slick-dots li button:focus { outline: none; }
+.Imgslider .slick-dots li button:hover { opacity: 1; background: #3c3b6e; }
+.Imgslider .slick-dots li.slick-active button { background: #b22234; box-shadow: 0 0 0 1px #fff; opacity: 0.9; }
+.Imgslider .imgSliderMain {position: relative;z-index: 0;padding: 50px 0 0;}
+.Imgslider button.slick-prev {position: absolute;top: 0;right: 60px;}
+.Imgslider button.slick-next {position: absolute;top: 0;right: 0;}
+.Imgslider .capText { position: absolute; bottom: 0; left: 0; right: 0; text-align: center; padding: 1rem; text-shadow: 1px 1px  20px black; }
+.Imgslider .capText h2 {color: var(--white);font-size: 36px;}
+.Imgslider .capText p {color: var(--white);font-size: 16px;}

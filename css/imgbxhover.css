@@ -1,0 +1,15 @@
+/* ~~~~~ imageHoverBx CSS ~~~~~ */
+.imageHoverBx {width: 100%;display: block;padding: 50px 0;background-color: var(--purple);position: relative;z-index: 0;}
+.imageHoverBx .imghoverMain {text-align: center;display: flex;justify-content: center;gap: 20px; align-items: center;flex-wrap: wrap;width: 100%;margin: 0 auto;}
+.imageHoverBx .box { border: 1px solid #fff; width: 30%; height: 300px; background: #000; overflow: hidden; position: relative; cursor: pointer; }
+.imageHoverBx .box .image { position: relative; top: 0; left: 0; width: 100%; height: 100%; display: flex; }
+.imageHoverBx .box .image span { width: 25%; height: 100%; background: url(https://pixelcog.github.io/parallax.js/img/reflection-nebula-750x763.jpg); transition: all 0.3s ease-in-out; }
+.imageHoverBx .box .image span:nth-child(1) { background-position: 0; transition-delay: 0.1s; }
+.imageHoverBx .box .image span:nth-child(2) { background-position: 33.33%; transition-delay: 0.2s; }
+.imageHoverBx .box .image span:nth-child(3) { background-position: 66.66%; transition-delay: 0.3s; }
+.imageHoverBx .box .image span:nth-child(4) { background-position: 100%; transition-delay: 0.4s; }
+.imageHoverBx .box:hover .image span { transform: translateY(-100%); }
+.imageHoverBx .box .content { background: #333; color: #ffffff; width: 100%; height: 100%; transition: 0.3s; transition-delay: 0.5s; }
+.imageHoverBx .box:hover .content { transform: translateY(-100%); }
+.imageHoverBx .box .content h2 { font-size: 30px; padding: 20px 0; }
+.imageHoverBx .box .content p { font-size: 16px; padding: 0 15px; }

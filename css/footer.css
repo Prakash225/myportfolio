@@ -1,0 +1,19 @@
+/* ~~~~~ imageHoverBx CSS ~~~~~ */
+.footer {width: 100%;display: block;padding: 50px 0;background-color: var(--black);position: relative;z-index: 0;}
+.footer .footer-links, .footer .footer-icons { display: flex; justify-content: center; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.footer .footer-link { color: var(--white); text-transform: capitalize; font-size: 1rem; margin-right: 1rem; letter-spacing: var(--spacing); transition: var(--transition); }
+.footer .footer-link:hover { color: var(--amber); }
+.footer .footer-icon { font-size: 2rem; margin-right: 1rem; color: var(--white); transition: var(--transition); }
+.footer .footer-icon:hover { color: var(--amber); }
+.footer .copyright { text-transform: capitalize; letter-spacing: var(--spacing); color: var(--white);text-align: center; }
+.footer .copyright a {color: var(--white);}
+.footer .copyright a:focus,.footer .copyright a:hover { color: var(--amber); }
+.footer .copyright span { margin-left: 0.5rem; }
+
+
+/* ~~~~~ Back to top button CSS ~~~~~ */
+#button { display: inline-block; background-color: #FF9800; width: 50px; height: 50px; text-align: center; border-radius: 4px; position: fixed; bottom: 30px; right: 30px; transition: background-color .3s, opacity .5s, visibility .5s; opacity: 0; visibility: hidden; z-index: 1000; }
+#button::after { content: "\f077"; font-family: FontAwesome; font-weight: normal; font-style: normal; font-size: 2em; line-height: 50px; color: #fff; }
+#button:hover { cursor: pointer; background-color: #333; }
+#button:active { background-color: #555; }
+#button.show { opacity: 1; visibility: visible; }

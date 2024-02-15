@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/formAnimated.css">
+    <!-- [S] JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <!-- [E] JS -->
+</head>
+
+<body>
+    <!-- [S] Navigation -->
+    <div id="header"></div>
+    <!-- [E] Navigation -->
+    <!-- [S] Form Animated  -->
+    <section class="FormAnimated">
+        <div class="container">
+            <div class="FormAnimatedMain">
+                <form>
+                    <h1>Contact Us</h1>
+                    <div class="inputbox col col-6">
+                        <div class="inputtext">First name</div>
+                        <input type="text" value="">
+                    </div>
+                    <div class="inputbox col col-6">
+                        <div class="inputtext">Last name</div>
+                        <input type="text" value="">
+                    </div>
+                    <div class="inputbox col col-6">
+                        <div class="inputtext">Email</div>
+                        <input type="email" value="">
+                    </div>
+                    <div class="inputbox col col-6">
+                        <div class="inputtext">Password</div>
+                        <input type="password" value="">
+                    </div>
+                    <div class="inputbox col col-12">
+                        <div class="inputtext">Content</div>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- [E] Form Animated  -->
+    <!-- [S] Navigation -->
+    <div id="footer"></div>
+    <!-- [E] Navigation -->
+    <!-- [E] script  -->
+    <script src="js/general.js"></script>
+    <!-- [E] script  -->
+</body>
+
+</html>

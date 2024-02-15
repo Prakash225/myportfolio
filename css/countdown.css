@@ -1,0 +1,6 @@
+/* ~~~~~ Countdown CSS ~~~~~ */
+.Countdown {width: 100%;display: block;padding: 100px 0;background-color: var(--purple);}
+.Countdown h2 {color: var(--white);}
+.Countdown .CountdownMain {text-align: center;}
+.Countdown li { display: inline-block; font-size: 1.5em; list-style-type: none; padding: 1em; text-transform: uppercase; color: var(--white);}
+.Countdown li span { display: block; font-size: 4.5rem; }

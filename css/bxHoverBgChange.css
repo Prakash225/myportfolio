@@ -1,0 +1,11 @@
+/* ~~~~~ bxHoverBgChange CSS ~~~~~ */
+.bg-body { background-color: #000; color: #ffffff; transition: all ease-in-out 0.2s;width: 100%;display: block;padding: 100px 0;background-color: var(--white);position: relative;z-index: 0; }
+.bg-body ul { list-style: none;gap: 50px; display: flex; flex-wrap: wrap; justify-content: space-between; text-align: center;  align-items: center; }
+.bg-body ul li { cursor: pointer;padding: 2.5rem; width: 30%; border: 1px solid var(--black);color: var(--black);}
+.bg-body ul li .fa { font-size: 40px; margin: 20px auto; }
+.bg-body.red { background: red; }
+.bg-body.green { background: green; }
+.bg-body.yellow { background: yellow; }
+.bg-body.blue { background: blue; }
+.bg-body.cyan { background: cyan; }
+.bg-body.orange { background: orange; }

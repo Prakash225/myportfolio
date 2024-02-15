@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Prakash Prajapati</a>
+            </div>
+            <nav class="menu">
+                <div class="head">
+                    <div class="logo"><a href="index.html">Prakash Prajapati</a></div>
+                    <button type="button" class="close-menu-btn"></button>
+                </div>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#"><span>about</span></a></li>
+                    <li class="dropdown">
+                        <a href="#">services</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li class="dropdown">
+                                <a href="#"><span>HTML</span></a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="sub-menu sub-menu-right">
+                                    <li><a href="accordion.html"><span>Accordion</span></a></li>
+                                    <li><a href="tabbing.html"><span>Tabbing</span></a></li>
+                                    <li><a href="poster.html"><span>Poster Card</span></a></li>
+                                    <li><a href="quote.html"><span>Quote Box</span></a></li>
+                                    <li><a href="imageBxHover.html"><span>Image Box Hover</span></a></li>
+                                    <li><a href="multicolumn.html"><span>Multicolumn</span></a></li>
+                                    <li><a href="cardHoverEffect.html"><span>Card Hover Effect</span></a></li>
+                                    <li><a href="bxHoverBgChange.html"><span>Box Hover BG Change</span></a></li>
+                                    <li><a href="counter.html"><span>Counter</span></a></li>
+                                    <li><a href="sliderWidthCSS.html"><span>Slider Width CSS</span></a></li>
+                                    <li><a href="countdown.html"><span>Countdown</span></a></li>
+                                    <li><a href="loginBx.html"><span>Login Box</span></a></li>
+                                    <li><a href="imgslider.html"><span>Image Slider</span></a></li>
+                                    <li><a href="multiLayer.html"><span>MultiLayer</span></a></li>
+                                    <li><a href="threeBx.html"><span>Three Box</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><span>CSS</span></a></li>
+                            <li><a href="#"><span>javaScript</span></a></li>
+                            <li class="dropdown">
+                                <a href="#"><span>jQuery</span></a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="sub-menu sub-menu-right">
+                                    <li><a href="#"><span>accordion</span></a></li>
+                                    <li><a href="#"><span>alert</span></a></li>
+                                    <li class="dropdown">
+                                        <a href="#"><span>cards</span></a>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                        <ul class="sub-menu sub-menu-right">
+                                            <li><a href="#"><span>card 1</span></a></li>
+                                            <li><a href="#"><span>card 2</span></a></li>
+                                            <li><a href="#"><span>card 3</span></a></li>
+                                            <li><a href="#"><span>card 4</span></a></li>
+                                            <li><a href="#"><span>card 5</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><span>carousel</span></a></li>
+                                    <li><a href="#"><span>table</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">portfolio</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="#"><span>portfolio masonry</span></a></li>
+                            <li><a href="#"><span>portfolio list</span></a></li>
+                            <li><a href="#"><span>portfolio details</span></a></li>
+                            <li class="dropdown">
+                                <a href="#"><span>portfolio grid</span></a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="sub-menu sub-menu-left">
+                                    <li><a href="#"><span>portfolio 1</span></a></li>
+                                    <li><a href="#"><span>portfolio 2</span></a></li>
+                                    <li><a href="#"><span>portfolio 3</span></a></li>
+                                    <li><a href="#"><span>portfolio 4</span></a></li>
+                                    <li><a href="#"><span>portfolio 5</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="contactUs.html">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <button type="button" class="search-btn icon-btn"><i class="fa-solid fa-search"></i></button>
+                <button type="button" class="cart-btn icon-btn"><i class="fa-solid fa-shopping-cart"></i></button>
+                <button type="button" class="open-menu-btn">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="scroll-line"></div>
+
+    <!-- [E] script  -->
+    <script src="js/script.js"></script>
+    <!-- [E] script  -->
+    <script>
+
+
+        // On scroll indicator window 
+        $(window).scroll(function () {
+
+            var wintop = $(window).scrollTop(), docheight =
+
+                $(document).height(), winheight = $(window).height();
+
+            var scrolled = (wintop / (docheight - winheight)) * 100;
+
+            $('.scroll-line').css('width', (scrolled + '%'));
+
+        });
+    </script>
+</body>
+
+</html>
