@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Hover BG Change</title>
+    <!-- [S] Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bxHoverBgChange.css">
@@ -97,7 +101,20 @@
     <div id="footer"></div>
     <!-- [E] Navigation -->
     <!-- [E] script  -->
-    <script src="js/general.js"></script>
+    <script>
+        // On Hover Background Change
+        $('.bxHoverBgChange ul li').hover(
+            function () {
+                var tr = jQuery(this).attr('class');
+                $(".bg-body").addClass(tr);
+            },
+
+            function () {
+                var trr = jQuery(this).attr('class');
+                $(".bg-body").removeClass(trr);
+            }
+        );
+    </script>
     <!-- [E] script  -->
 </body>
 
