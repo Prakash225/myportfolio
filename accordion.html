@@ -118,7 +118,28 @@
     <div id="footer"></div>
     <!-- [E] Navigation -->
     <!-- [E] script  -->
-    <script src="js/general.js"></script>
+    <script>
+        // Accordion
+        $('.parent-menu').click(function (e) {
+    e.preventDefault();
+
+    var $this = $(this);
+
+    // Add 'open' class to the clicked element and remove it from siblings
+    $this.parent().addClass('open').siblings().removeClass('open');
+
+    if ($this.next().hasClass('show')) {
+        $this.next().removeClass('show');
+        $this.next().slideUp(350);
+    } else {
+        $this.parent().parent().find('li .sub-menu').removeClass('show');
+        $this.parent().parent().find('li .sub-menu').slideUp(350);
+        $this.next().toggleClass('show');
+        $this.next().slideToggle(350);
+    }
+});
+
+    </script>
     <!-- [E] script  -->
 </body>
 
