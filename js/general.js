@@ -135,18 +135,7 @@ $('.tabs-nav a').on('click', function (event) {
 $('.tabs-nav a:first').trigger('click'); // Default
 
 
-// On Hover Background Change
-$('.bxHoverBgChange ul li').hover(
-    function () {
-        var tr = jQuery(this).attr('class');
-        $(".bg-body").addClass(tr);
-    },
 
-    function () {
-        var trr = jQuery(this).attr('class');
-        $(".bg-body").removeClass(trr);
-    }
-);
 
 // Login Box
 function opentab(obj) {
